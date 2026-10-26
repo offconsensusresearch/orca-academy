@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Off Consensus Research Academy</title>
+<meta name="description" content="Certificates of Completion from Off Consensus Research Academy: get, verify or download a certificate.">
+<style>html,body{margin:0;height:100%;background:#FBF8F1}iframe{border:0;width:100%;height:100vh;display:block}</style>
+</head><body>
+<iframe id="app" title="Off Consensus Research Academy"></iframe>
+<script>
+  // Replace with the Apps Script web app URL after deployment (ends with /exec)
+  var APP = 'https://script.google.com/macros/s/REPLACE_WITH_DEPLOYMENT_ID/exec';
+  var q = new URLSearchParams(location.search), s = (q.get('s') || '').replace(/[^A-Za-z0-9-]/g, '').slice(0, 40);
+  document.getElementById('app').src = APP + '?page=download' + (s ? '&s=' + encodeURIComponent(s) : '');
+</script>
+</body></html>
